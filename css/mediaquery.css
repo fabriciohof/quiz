@@ -1,0 +1,74 @@
+@media (max-width: 768px) { 
+    main {
+      position: relative;
+      padding-left: 100px; 
+      transition: padding-left 0.2s; 
+    }
+  
+    nav.menu-lateral {
+      width: 60px; 
+      padding: 20px 0; 
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+      z-index: 1; 
+      transition: width 0.2s; 
+      
+    }
+  
+    nav.menu-lateral:hover {
+      width: 200px; 
+    }
+  
+    .botao-expandir {
+      padding-left: 5px; 
+    }
+  
+    ul li.item-menu a {
+      padding: 15px 10px; 
+      margin-bottom: 5px; 
+      line-height: 30px; 
+    }
+  
+    header {
+      height: 70px;
+      padding: 20px 0;
+    }
+  
+    header h1 {
+      width: 100px;
+      margin-right: 100px;
+      text-align: center;
+      white-space: nowrap;
+    }
+  
+    .back-button{
+      display: none;
+    }
+  
+    main {
+      margin-top: 10px;
+      margin-bottom: 100px; 
+    }
+  
+    #quizz-container,
+    #score-container {
+      width: calc(100% - 100px); 
+      max-width: none; 
+      margin: 0 auto; 
+      z-index: 2; 
+    }
+  
+    #restart {
+      width: 150px; 
+    }
+  
+    #question {
+      font-size: 18px;
+      margin-bottom: 20px; 
+    }
+  
+    #answers-box button {
+      margin: 10px 0; 
+    }
+  }

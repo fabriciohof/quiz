@@ -1,0 +1,116 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Remove a rolagem lateral */
+    display: flex; /* Usa flex no corpo */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+  }
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0d4580 ;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilos para a seção de dicas */
+.tips-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  
+}
+
+.tips-section li {
+  text-align: justify; 
+  margin: 0;
+  margin-left:80px;
+} 
+
+.start-quiz-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: none; 
+  cursor: pointer; 
+}
+
+.start-quiz-button:hover {
+  background-color: #0056b3;
+  text-decoration: none; 
+}
+
+/* Estilos para o rodapé */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+footer p {
+  margin: 0;
+}
+
+  
+/* responsividade */
+
+@media screen and (max-width: 768px) {
+  .container {  
+      width: 100%;
+      max-width: none;
+      padding: 10px;
+  }
+
+  header h1{
+      font-size: 26px; 
+  }
+
+
+
+  .tips-section{
+    max-width: 100%;
+    
+    margin-right: 50px;
+  }
+  .tips-section li {
+      margin-left: 0;
+      line-height: 1.5; /* Adiciona espaçamento entre as linhas */
+  }
+
+  .start-quiz-button {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+}
