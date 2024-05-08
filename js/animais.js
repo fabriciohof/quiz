@@ -9,216 +9,217 @@ let actualQuestion = 0;
 // perguntas
 const questions = [
     {
-      question: 'Qual é o jogador que detém o recorde de mais gols marcados em uma única edição da Copa do Mundo?',
+      question: 'Qual é o maior animal terrestre?',
       answers: [
         {
-          answer: 'Pelé',
+          answer: 'Elefante africano',
           correct: true,
         },
         {
-          answer: 'Miroslav Klose',
+          answer: 'Rinoceronte',
           correct: false,
         },
         {
-          answer: 'Ronaldo Nazário',
+          answer: 'Girafa',
           correct: false,
         },
         {
-          answer: 'Gerd Müller',
+          answer: 'Hipopótamo',
           correct: false,
         },
       ],
     },
     {
-      question: 'Quantos títulos da Copa do Mundo a seleção brasileira de futebol já conquistou?',
+      question: 'Qual é o animal mais rápido do mundo?',
       answers: [
         {
-          answer: '5',
+          answer: 'Guepardo',
+          correct: false,
+        },
+        {
+          answer: 'Leopardo',
+          correct: false,
+        },
+        {
+          answer: 'Falcão peregrino',
           correct: true,
         },
         {
-          answer: '3',
-          correct: false,
-        },
-        {
-          answer: '4',
-          correct: false,
-        },
-        {
-          answer: '2',
+          answer: 'Lebre',
           correct: false,
         },
       ],
     },
     {
-      question: 'Qual é o jogador que ganhou o prêmio de Melhor Jogador do Mundo da FIFA mais vezes?',
+      question: 'Qual é o animal que tem a maior população na Terra?',
       answers: [
         {
-          answer: 'Lionel Messi',
+          answer: 'Formiga',
           correct: true,
         },
         {
-          answer: 'Cristiano Ronaldo',
+          answer: 'Rato',
           correct: false,
         },
         {
-          answer: 'Diego Maradona',
+          answer: 'Mosquito',
           correct: false,
         },
         {
-          answer: 'Pelé',
+          answer: 'Barata',
           correct: false,
         },
       ],
     },
     {
-      question: 'Qual é o único país que participou de todas as edições da Copa do Mundo?',
+      question: 'Qual é o maior réptil do mundo?',
       answers: [
         {
-          answer: 'Brasil',
+          answer: 'Iguana',
+          correct: false,
+        },
+        {
+          answer: 'Tartaruga-verde',
+          correct: false,
+        },
+        {
+          answer: 'Crocodilo-de-água-salgada',
           correct: true,
         },
         {
-          answer: 'Alemanha',
-          correct: false,
-        },
-        {
-          answer: 'Itália',
-          correct: false,
-        },
-        {
-          answer: 'Argentina',
+          answer: 'Píton-reticulada',
           correct: false,
         },
       ],
     },
     {
-      question: 'Qual jogador marcou o gol mais rápido na história das Copas do Mundo?',
+      question: 'Qual é o animal mais venenoso do mundo?',
       answers: [
         {
-          answer: 'Hakan Şükür',
+          answer: 'Vespa assassina',
+          correct: false,
+        },
+        {
+          answer: 'Medusa-vespa-do-mar',
           correct: true,
         },
         {
-          answer: 'Ronaldo Nazário',
+          answer: 'Ariranha',
           correct: false,
         },
         {
-          answer: 'Clint Dempsey',
-          correct: false,
-        },
-        {
-          answer: 'Tim Cahill',
+          answer: 'Escorpião-amarelo',
           correct: false,
         },
       ],
     },
     {
-      question: 'Qual país venceu a Copa do Mundo de 2018?',
+      question: 'Qual é o maior primata do mundo?',
       answers: [
         {
-          answer: 'França',
-          correct: true,
-        },
-        {
-          answer: 'Brasil',
+          answer: 'Bonobo',
           correct: false,
         },
         {
-          answer: 'Alemanha',
+          answer: 'Orangotango',
           correct: false,
         },
         {
-          answer: 'Argentina',
-          correct: false,
-        },
-      ],
-    },
-    {
-      question: 'Qual é o maior artilheiro da história da Liga dos Campeões da UEFA?',
-      answers: [
-        {
-          answer: 'Cristiano Ronaldo',
-          correct: true,
-        },
-        {
-          answer: 'Lionel Messi',
+          answer: 'Chimpanzé',
           correct: false,
         },
         {
-          answer: 'Raúl',
-          correct: false,
-        },
-        {
-          answer: 'Karim Benzema',
-          correct: false,
-        },
-      ],
-    },
-    {
-      question: 'Qual é o nome do estádio onde aconteceu a final da Copa do Mundo de 2014?',
-      answers: [
-        {
-          answer: 'Estádio do Engenhão',
-          correct: false,
-        },
-        {
-          answer: 'Estádio Mineirão',
-          correct: false,
-        },
-        {
-          answer: 'Arena Corinthians',
-          correct: false,
-        },
-        {
-          answer: 'Estádio do Maracanã',
+          answer: 'Gorila',
           correct: true,
         },
       ],
     },
     {
-      question: 'Qual seleção nacional de futebol é conhecida como "La Albiceleste"?',
+      question: 'Qual é o animal mais resistente do mundo?',
       answers: [
         {
-          answer: 'Argentina',
+          answer: 'Tardígrado',
           correct: true,
         },
         {
-          answer: 'Uruguai',
+          answer: 'Besouro da Namíbia',
           correct: false,
         },
         {
-          answer: 'Espanha',
+          answer: 'Cockroach',
           correct: false,
         },
         {
-          answer: 'Chile',
+          answer: 'Rato-toupeira-pelado',
           correct: false,
         },
       ],
     },
     {
-      question: 'Qual é o nome do troféu dado ao campeão da Copa do Mundo?',
+      question: 'Qual é o maior animal marinho do mundo?',
       answers: [
         {
-          answer: 'Taça FIFA',
+          answer: 'Baleia-jubarte',
+          correct: false,
+        },
+        {
+          answer: 'Tubarão-baleia',
+          correct: false,
+        },
+        {
+          answer: 'Baleia-azul',
           correct: true,
         },
         {
-          answer: 'Taça Jules Rimet',
-          correct: false,
-        },
-        {
-          answer: 'Taça UEFA',
-          correct: false,
-        },
-        {
-          answer: 'Taça Libertadores',
+          answer: 'Baleia-cinzenta',
           correct: false,
         },
       ],
     },
-  ];
+    {
+        question: 'Qual animal é símbolo de sabedoria?',
+        answers: [
+          {
+            answer: 'Coruja',
+            correct: true,
+          },
+          {
+            answer: 'Gato',
+            correct: false,
+          },
+          {
+            answer: 'Cachorro',
+            correct: false,
+          },
+          {
+            answer: 'Rato',
+            correct: false,
+          },
+        ],
+      },
+    {
+      question: 'Qual destes animais é conhecido por sua capacidade de camuflagem?',
+      answers: [
+        {
+          answer: 'Coelho',
+          correct: false,
+        },
+        {
+          answer: 'Tigre',
+          correct: false,
+        },
+        {
+          answer: 'Faisão-dourado',
+          correct: false,
+        },
+        {
+          answer: 'Camaleão',
+          correct: true,
+        },
+      ],
+    },
+];
+
 
 
 

@@ -12,7 +12,7 @@ const questions = [
       question: 'Qual é o país mais populoso do mundo?',
       answers: [
         {
-          answer: 'China',
+          answer: 'Brasil',
           correct: true,
         },
         {
@@ -24,8 +24,8 @@ const questions = [
           correct: false,
         },
         {
-          answer: 'Brasil',
-          correct: false,
+          answer: 'China',
+          correct: true,
         },
       ],
     },
@@ -54,8 +54,8 @@ const questions = [
       question: 'Qual é a capital da França?',
       answers: [
         {
-          answer: 'Paris',
-          correct: true,
+          answer: 'Berlim',
+          correct: false,
         },
         {
           answer: 'Londres',
@@ -66,8 +66,8 @@ const questions = [
           correct: false,
         },
         {
-          answer: 'Berlim',
-          correct: false,
+          answer: 'Paris',
+          correct: true,
         },
       ],
     },
@@ -96,16 +96,16 @@ const questions = [
       question: 'Qual é o país conhecido como "Terra do Sol Nascente"?',
       answers: [
         {
-          answer: 'Japão',
-          correct: true,
+          answer: 'China',
+          correct: false,
         },
         {
           answer: 'Coreia do Sul',
           correct: false,
         },
         {
-          answer: 'China',
-          correct: false,
+          answer: 'Japão',
+          correct: true,
         },
         {
           answer: 'Austrália',
@@ -114,22 +114,22 @@ const questions = [
       ],
     },
     {
-      question: 'Qual é o país com o maior número de ilhas do mundo?',
+      question: 'Qual país abriga as Ilhas Galápagos, famosas por sua vida selvagem única?',
       answers: [
         {
-          answer: 'Suécia',
+          answer: 'Peru',
           correct: false,
         },
         {
-          answer: 'Indonésia',
+          answer: 'Equador',
           correct: true,
         },
         {
-          answer: 'Filipinas',
+          answer: 'Bolívia',
           correct: false,
         },
         {
-          answer: 'Japão',
+          answer: 'Colômbia',
           correct: false,
         },
       ],
@@ -180,8 +180,8 @@ const questions = [
       question: 'Qual é o país que possui o maior número de Patrimônios Mundiais da UNESCO?',
       answers: [
         {
-          answer: 'Itália',
-          correct: true,
+          answer: 'China',
+          correct: false,
         },
         {
           answer: 'França',
@@ -192,29 +192,29 @@ const questions = [
           correct: false,
         },
         {
-          answer: 'China',
-          correct: false,
+          answer: 'Itália',
+          correct: true,
         },
       ],
     },
     {
-      question: 'Qual é o país conhecido como "País das Mil Ilhas"?',
+      question: ' Qual país africano foi o primeiro a se tornar independente do domínio colonial em 1957?',
       answers: [
         {
-          answer: 'Canadá',
+          answer: 'Nigéria',
+          correct: false,
+        },
+        {
+          answer: 'Etiópia',
+          correct: false,
+        },
+        {
+          answer: 'Senegal',
+          correct: false,
+        },
+        {
+          answer: 'Gana',
           correct: true,
-        },
-        {
-          answer: 'Austrália',
-          correct: false,
-        },
-        {
-          answer: 'Noruega',
-          correct: false,
-        },
-        {
-          answer: 'Nova Zelândia',
-          correct: false,
         },
       ],
     },

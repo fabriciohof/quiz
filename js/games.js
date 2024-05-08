@@ -117,8 +117,8 @@ const questions = [
       question: 'Qual é o nome do protagonista da série de jogos "Metal Gear Solid"?',
       answers: [
         {
-          answer: 'Solid Snake',
-          correct: true,
+          answer: 'Big Boss',
+          correct: false,
         },
         {
           answer: 'Master Chief',
@@ -129,8 +129,8 @@ const questions = [
           correct: false,
         },
         {
-          answer: 'Big Boss',
-          correct: false,
+          answer: 'Solid Snake',
+          correct: true,
         },
       ],
     },

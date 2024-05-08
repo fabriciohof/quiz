@@ -9,31 +9,10 @@ let actualQuestion = 0;
 // perguntas
 const questions = [
     {
-      question: 'Qual é o jogador que detém o recorde de mais gols marcados em uma única edição da Copa do Mundo?',
+      question: 'Quanto é 2 + 2?',
       answers: [
         {
-          answer: 'Pelé',
-          correct: true,
-        },
-        {
-          answer: 'Miroslav Klose',
-          correct: false,
-        },
-        {
-          answer: 'Ronaldo Nazário',
-          correct: false,
-        },
-        {
-          answer: 'Gerd Müller',
-          correct: false,
-        },
-      ],
-    },
-    {
-      question: 'Quantos títulos da Copa do Mundo a seleção brasileira de futebol já conquistou?',
-      answers: [
-        {
-          answer: '5',
+          answer: '4',
           correct: true,
         },
         {
@@ -41,186 +20,205 @@ const questions = [
           correct: false,
         },
         {
+          answer: '5',
+          correct: false,
+        },
+        {
+          answer: '6',
+          correct: false,
+        },
+      ],
+    },
+    {
+        question: 'Qual é o resultado da expressão log₂(16)?',
+        answers: [
+          {
+            answer: '16',
+            correct: false,
+          },
+          {
+            answer: '2',
+            correct: false,
+          },
+          {
+            answer: '8',
+            correct: false,
+          },
+          {
+            answer: '4',
+            correct: true,
+          },
+        ],
+      },
+    {
+      question: 'Qual é a raiz quadrada de 25?',
+      answers: [
+        {
+          answer: '10',
+          correct: false,
+        },
+        {
           answer: '4',
           correct: false,
         },
         {
+          answer: '5',
+          correct: true,
+        },
+        {
+          answer: '7',
+          correct: false,
+        },
+      ],
+    },
+    {
+      question: 'Quanto é 100 elevado a 0?',
+      answers: [
+        {
+          answer: '0',
+          correct: false,
+        },
+        {
+          answer: '10',
+          correct: false,
+        },
+        {
+          answer: '100',
+          correct: false,
+        },
+        {
+          answer: '1',
+          correct: true,
+        },
+      ],
+    },
+    {
+        question: 'Qual é o valor de sen(π/2)?',
+        answers: [
+          {
+            answer: '1',
+            correct: true,
+          },
+          {
+            answer: '0',
+            correct: false,
+          },
+          {
+            answer: '-1',
+            correct: false,
+          },
+          {
+            answer: 'π/2',
+            correct: false,
+          },
+        ],
+      },
+    {
+      question: 'Quanto é o seno de 90 graus?',
+      answers: [
+        {
+          answer: '0',
+          correct: false,
+        },
+        {
+          answer: '1',
+          correct: true,
+        },
+        {
+          answer: '0.5',
+          correct: false,
+        },
+        {
+          answer: '-1',
+          correct: false,
+        },
+      ],
+    },
+    {
+      question: 'Quanto é 30% de 200?',
+      answers: [
+        {
+          answer: '60',
+          correct: true,
+        },
+        {
+          answer: '50',
+          correct: false,
+        },
+        {
+          answer: '70',
+          correct: false,
+        },
+        {
+          answer: '40',
+          correct: false,
+        },
+      ],
+    },
+    {
+      question: 'Quanto é o logaritmo de 100 na base 10?',
+      answers: [
+        {
+          answer: '1',
+          correct: false,
+        },
+        {
+          answer: '10',
+          correct: false,
+        },
+        {
           answer: '2',
+          correct: true,
+        },
+        {
+          answer: '1000',
           correct: false,
         },
       ],
     },
     {
-      question: 'Qual é o jogador que ganhou o prêmio de Melhor Jogador do Mundo da FIFA mais vezes?',
+      question: 'Quanto é 3! (fatorial de 3)?',
       answers: [
         {
-          answer: 'Lionel Messi',
+          answer: '6',
           correct: true,
         },
         {
-          answer: 'Cristiano Ronaldo',
+          answer: '3',
           correct: false,
         },
         {
-          answer: 'Diego Maradona',
+          answer: '9',
           correct: false,
         },
         {
-          answer: 'Pelé',
+          answer: '12',
           correct: false,
         },
       ],
     },
     {
-      question: 'Qual é o único país que participou de todas as edições da Copa do Mundo?',
-      answers: [
-        {
-          answer: 'Brasil',
-          correct: true,
-        },
-        {
-          answer: 'Alemanha',
-          correct: false,
-        },
-        {
-          answer: 'Itália',
-          correct: false,
-        },
-        {
-          answer: 'Argentina',
-          correct: false,
-        },
-      ],
-    },
-    {
-      question: 'Qual jogador marcou o gol mais rápido na história das Copas do Mundo?',
-      answers: [
-        {
-          answer: 'Hakan Şükür',
-          correct: true,
-        },
-        {
-          answer: 'Ronaldo Nazário',
-          correct: false,
-        },
-        {
-          answer: 'Clint Dempsey',
-          correct: false,
-        },
-        {
-          answer: 'Tim Cahill',
-          correct: false,
-        },
-      ],
-    },
-    {
-      question: 'Qual país venceu a Copa do Mundo de 2018?',
-      answers: [
-        {
-          answer: 'França',
-          correct: true,
-        },
-        {
-          answer: 'Brasil',
-          correct: false,
-        },
-        {
-          answer: 'Alemanha',
-          correct: false,
-        },
-        {
-          answer: 'Argentina',
-          correct: false,
-        },
-      ],
-    },
-    {
-      question: 'Qual é o maior artilheiro da história da Liga dos Campeões da UEFA?',
-      answers: [
-        {
-          answer: 'Cristiano Ronaldo',
-          correct: true,
-        },
-        {
-          answer: 'Lionel Messi',
-          correct: false,
-        },
-        {
-          answer: 'Raúl',
-          correct: false,
-        },
-        {
-          answer: 'Karim Benzema',
-          correct: false,
-        },
-      ],
-    },
-    {
-      question: 'Qual é o nome do estádio onde aconteceu a final da Copa do Mundo de 2014?',
-      answers: [
-        {
-          answer: 'Estádio do Engenhão',
-          correct: false,
-        },
-        {
-          answer: 'Estádio Mineirão',
-          correct: false,
-        },
-        {
-          answer: 'Arena Corinthians',
-          correct: false,
-        },
-        {
-          answer: 'Estádio do Maracanã',
-          correct: true,
-        },
-      ],
-    },
-    {
-      question: 'Qual seleção nacional de futebol é conhecida como "La Albiceleste"?',
-      answers: [
-        {
-          answer: 'Argentina',
-          correct: true,
-        },
-        {
-          answer: 'Uruguai',
-          correct: false,
-        },
-        {
-          answer: 'Espanha',
-          correct: false,
-        },
-        {
-          answer: 'Chile',
-          correct: false,
-        },
-      ],
-    },
-    {
-      question: 'Qual é o nome do troféu dado ao campeão da Copa do Mundo?',
-      answers: [
-        {
-          answer: 'Taça FIFA',
-          correct: true,
-        },
-        {
-          answer: 'Taça Jules Rimet',
-          correct: false,
-        },
-        {
-          answer: 'Taça UEFA',
-          correct: false,
-        },
-        {
-          answer: 'Taça Libertadores',
-          correct: false,
-        },
-      ],
-    },
+        question: 'Qual é a derivada de sen(x)?',
+        answers: [
+          {
+            answer: 'tg(x)',
+            correct: false,
+          },
+          {
+            answer: '-sen(x)',
+            correct: false,
+          },
+          {
+            answer: 'cos(x)',
+            correct: true,
+          },
+          {
+            answer: 'csc(x)',
+            correct: false,
+          },
+        ],
+      },
   ];
-
-
 
 // substituição do quizz para a primeira pergunta
 function init() {
